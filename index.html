@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <h3 class="logo">Character Counter</h3>
+            <button class="theme">☀️</button>
+        </div>
+        
+    </header>
+    <h1 class="title">
+        Analyze your text <br>
+        in real-time
+    </h1>    
+    <div class="input">
+        <input id="inputTxt" type="text" placeholder="Start typing here...(or paste your text)">
+    </div>
+
+    <div class="options">
+
+        <div class="check">
+            <input type="checkbox" id="exSpaces">
+            <label for="">Exclude Spaces</label>
+            <input type="checkbox" id="limChars">
+            <label for="limChars">Set Charachters Limit</label>
+        
+        </div>
+        <div class="reading-time">
+            <p id="readingTime">Approx. reading time: 0 minute</p>
+        </div>
+    </div>
+    
+    
+
+    <div class="showResult">
+        <div class="purple cards">
+            <div class="counter" id="chars">00</div>
+            <div class="label">Total Characters</div>
+        </div>
+
+        <div class="orange cards">
+            <div class="counter" id="words">00</div>
+            <div class="label">Word Count</div>
+        </div>
+
+        <div class="red cards">
+            <div class="counter" id="sents">00</div>
+            <div class="label">Sentence Count</div>
+        </div>
+    </div>
+
+    <div class="density-area">
+        <h3 id="dens-h3">Letter Density</h3>
+        <div id="density">No letters yet...</div>
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
